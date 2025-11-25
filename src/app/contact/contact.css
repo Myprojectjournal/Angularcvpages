@@ -1,0 +1,35 @@
+.contact {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 80px;
+  padding: 50px 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  max-width: 900px;
+}
+.contact-links a {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-decoration: none;
+  color: #fff;
+  background: #08063d;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin: 10px;
+  display: inline-block;
+}
+.contact-links a:hover {
+  background: #00bfa6;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+  margin-top: 60px;
+  text-align: center;
+  color: #b0b0b0;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+  max-width: 900px;
+}

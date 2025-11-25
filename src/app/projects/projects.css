@@ -1,0 +1,74 @@
+/* ===== SKILLS SECTION ===== */
+.skills {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* darker background for contrast */
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #FFD700; /* bright yellow */
+  font-weight: bold;
+}
+
+.skills p {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  color: #ffffff; /* pure white */
+}
+
+/* Container for skill cards */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Individual skill card */
+.skill-card {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+  border-radius: 15px;
+  padding: 25px;
+  width: clamp(150px, 20vw, 220px);
+  transition: transform 0.3s, background 0.3s;
+  cursor: default;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Card hover effect */
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 215, 0, 0.2); /* faint yellow glow */
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+/* Skill titles */
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #FFD700; /* bright yellow */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Skill description */
+.skill-card p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}

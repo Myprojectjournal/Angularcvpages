@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar">
+    <div class="logo">K.E</div>
+
+    <!-- Hamburger menu -->
+    <div class="menu-toggle" id="mobile-menu" (click)="toggleMobileMenu()">
+      &#9776;
+    </div>
+
+    <!-- Navbar links -->
+    <ul [class.active]="mobileMenuOpen()" class="nav-links">
+      <li><a routerLink="">Home</a></li>
+      <li><a routerLink="projects">Skills</a></li>
+      <li><a routerLink="skills">About Me</a></li>
+      <li><a routerLink="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+<!-- MAIN ROUTED CONTENT -->
+<router-outlet></router-outlet>
